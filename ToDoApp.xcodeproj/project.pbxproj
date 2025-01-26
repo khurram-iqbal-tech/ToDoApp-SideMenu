@@ -29,6 +29,29 @@
 		52A97C3C2D427E1E00AEC2B8 /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		52C4604D2D46075700B7153E /* Exceptions for "ScreenShots" folder in "ToDoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.10.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.21.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.35.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.48.png",
+			);
+			target = 52A97C212D427E1C00AEC2B8 /* ToDoApp */;
+		};
+		52C4604E2D46075700B7153E /* Exceptions for "ScreenShots" folder in "ToDoAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.10.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.21.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.35.png",
+				"Simulator Screenshot - iPhone 16 Pro - 2025-01-26 at 10.53.48.png",
+			);
+			target = 52A97C3B2D427E1E00AEC2B8 /* ToDoAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		52A97C242D427E1C00AEC2B8 /* ToDoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -43,6 +66,15 @@
 		52A97C3F2D427E1E00AEC2B8 /* ToDoAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		52C460482D46075700B7153E /* ScreenShots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				52C4604D2D46075700B7153E /* Exceptions for "ScreenShots" folder in "ToDoApp" target */,
+				52C4604E2D46075700B7153E /* Exceptions for "ScreenShots" folder in "ToDoAppUITests" target */,
+			);
+			path = ScreenShots;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +111,7 @@
 				52A97C352D427E1E00AEC2B8 /* ToDoAppTests */,
 				52A97C3F2D427E1E00AEC2B8 /* ToDoAppUITests */,
 				52A97C232D427E1C00AEC2B8 /* Products */,
+				52C460482D46075700B7153E /* ScreenShots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +188,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				52A97C3F2D427E1E00AEC2B8 /* ToDoAppUITests */,
+				52C460482D46075700B7153E /* ScreenShots */,
 			);
 			name = ToDoAppUITests;
 			packageProductDependencies = (
