@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showSideView = false
-    @State private var isMenuOverlay = true
+    @AppStorage("MenuOverlay") private var isMenuOverlay = true
     
     var body: some View {
         if (isMenuOverlay){
@@ -18,6 +18,7 @@ struct HomeView: View {
                 SideMenu(showSideView: $showSideView, isMenuOverlay: $isMenuOverlay)
                     .offset(x: showSideView ? 0: -250)
             }
+        .animation(.bouncy, value: showSideView)
         }else {
                     ZStack{
                         ContentView(showSideView: $showSideView)
@@ -25,6 +26,7 @@ struct HomeView: View {
                             .offset(x: -250)
                     }
                     .offset(x: showSideView ? 250 : 0)
+                    .animation(.bouncy, value: showSideView)
             }
         
 

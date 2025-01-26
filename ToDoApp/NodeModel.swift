@@ -24,5 +24,5 @@ class Note: Identifiable{
         self.iconColor = iconColor
     }
     
-    static let sample = Note(icon: "pencil", title: "Swift UI", isComplete: true, iconColor: true)
+    static let sample = Note(icon: "circle.inset.filled", title: "Swift UI", isComplete: true, iconColor: true)
 }

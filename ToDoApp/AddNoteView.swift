@@ -44,6 +44,9 @@ struct AddNoteView: View {
     }
     
     func onSave(){
+        if text == ""{
+            return
+        }
         let newNote = Note(icon: "", title: text, isComplete: false, iconColor: false)
         context.insert(newNote)
         do{
