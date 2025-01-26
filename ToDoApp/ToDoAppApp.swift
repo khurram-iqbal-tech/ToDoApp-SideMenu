@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ToDoAppApp: App {
+    @Environment(\.modelContext) var modelContext
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .modelContainer(for: [Note.self])
+                
         }
     }
 }
