@@ -91,20 +91,22 @@ struct TopView: View {
     @Binding var showSideView: Bool
     
     var body: some View {
-        VStack(spacing: 8){
+        VStack(alignment: .leading, spacing: 8){
             Button{
                 showSideView.toggle()
             } label: {
-                Image(systemName: "lines.measurement.vertical")
+                Image(systemName: "line.3.horizontal")
                     .font(.title)
                     .bold()
                     .tint(.primary)
             }
+            
             Text("Notes")
                 .font(.largeTitle)
                 .bold()
             
         }
+        
         
         .frame(maxWidth: .infinity, alignment: .leading)
        
